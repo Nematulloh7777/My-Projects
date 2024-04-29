@@ -1,0 +1,220 @@
+body{
+    background-color: white;
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 440px;
+    padding: 14px;
+    border-radius: 8px;
+  } 
+  
+  #taskInput[type="text"] {
+    width: 440px;
+    padding: 14px;
+    border-radius: 8px;
+  } 
+  #taskInput:hover {
+    border: #4caf50 2px solid;
+  }
+
+
+  .error-input {
+      border: 2px solid red;
+  }
+  .error-input::placeholder {
+    color: red;
+  }
+  
+  #addTaskButton {
+    width: 120px;
+    padding: 14px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #addTaskButton:hover {
+    background-color: #5a45a0;
+    transition: 0.4s ease-in-out;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    padding: 14px;
+    margin: 10px 0px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+  } 
+  
+.light-theme li {
+  border: 1px solid #000; 
+}
+
+.dark-theme li {
+  border: 1px solid #fff; 
+}
+
+.task-done {
+  position: relative; 
+}
+.task-done::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: rgba(242, 6, 6, 0.786); 
+  transform: translateY(-50%);
+}
+
+.pinned-task {
+  color: red;
+  border: 1px solid red;
+}
+
+.dark-theme .pinned-task  {
+  border: 1px solid red; 
+}
+
+.dark-theme .title_modal  {
+  color: black;
+}
+
+
+.empty-message{
+  color: red;
+  display: block;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 190px;
+  max-width: 470px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+#saveEditedTask{
+    width: 120px;
+    padding: 14px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#cancelEdit{
+    width: 120px;
+    padding: 14px;
+    background-color: rgba(255, 0, 0, 0.645);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Стили для каждого задачи из списка иконок */
+.icons-container {
+  display: flex;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.icons-container i {
+  font-size: 22px; 
+  cursor: pointer; 
+}
+
+
+/* theme */
+#themeSwitch {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.dark-theme  {
+    background-color: #100b0b;
+    color: #f0f0f0;
+}
+#sunIcon,
+#moonIcon {
+    font-size: 30px; 
+}
+#sunIcon {
+    display: inline;
+    color: black;
+}
+#moonIcon {
+    display: none;
+    color: white;
+}
+.dark-theme #sunIcon {
+    display: none;
+}
+.dark-theme #moonIcon {
+    display: inline;
+}

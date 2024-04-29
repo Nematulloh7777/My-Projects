@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея изображений</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery">
+    <div class="thumbnails">
+      <img src="./image/image1.jpg" alt="Image 1" onclick="showImage(0)">
+      <img src="./image/image2.jpg" alt="Image 2" onclick="showImage(1)">
+      <img src="./image/image3.jpg" alt="Image 2" onclick="showImage(2)">
+      <img src="./image/image4.jpg" alt="Image 2" onclick="showImage(3)">
+      <img src="./image/image5.jpg" alt="Image 2" onclick="showImage(4)">
+    </div>
+    <div class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-img">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

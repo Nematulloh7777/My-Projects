@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Todo-List/icon/to-do-list.svg" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div  style="text-align: right; margin-right: 80px;">
+        <button  id="themeSwitch">
+            <i id="sunIcon" class="fas fa-sun"></i>
+            <i id="moonIcon" class="fas fa-moon"></i>
+        </button>
+    </div>
+    
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <button id="addTaskButton">Add Task +</button>
+        <span id="errorMessage" style="color: red;"></span>
+        <ul id="taskList" >
+
+        </ul>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 class="title_modal">Редактировать задачу</h2>
+              <input type="text" id="editedTaskInput" placeholder="Редактировать текст задачи...">
+              <div class="button-container">
+                <button id="saveEditedTask">Сохранить</button>
+                <button id="cancelEdit">Отмена</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+<i class="fas fa-check-circle" style="color: green;"></i>
+<i class="fas fa-regular fa-edit" style="color: #74C0FC;"></i>
+<i class="fas fa-trash" style="color: #f41606;"></i> -->

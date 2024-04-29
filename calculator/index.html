@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="icon" href="/calculator/icon/free-icon-calculator-891175.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div  style="text-align: right; margin-right: 80px;">
+        <button  id="themeSwitch">
+            <i id="sunIcon" class="fas fa-sun"></i>
+            <i id="moonIcon" class="fas fa-moon"></i>
+        </button>
+    </div>
+
+
+    <div id="calculator">
+        <h2>Добро Пожаловать !</h2>
+        <h1>Проект Калькулятор</h1>
+        <span>Введите Первую Число</span>
+        <input class="input_1" type="number" id="output">
+        <br>
+        <span>Введите Вторую Число</span>
+        <input class="input_2" type="number" id="output">
+        <div class="buttons_all">
+            <span>Выберите операцию: </span>
+            <button id="button_itmes" class="btn_plus">+</button>
+            <button id="button_itmes" class="btn_minus">-</button>
+            <button id="button_itmes" class="btn_multiplication">*</button>
+            <button id="button_itmes" class="btn_division">/</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

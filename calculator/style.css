@@ -1,0 +1,62 @@
+body{
+    background-color: white;
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#themeSwitch {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-theme  {
+    background-color: #100b0b;
+    color: #f0f0f0;
+}
+
+#sunIcon,
+#moonIcon {
+    font-size: 20px; 
+}
+
+#sunIcon {
+    display: inline;
+    color: black;
+}
+
+#moonIcon {
+    display: none;
+    color: white;
+}
+
+.dark-theme #sunIcon {
+    display: none;
+}
+.dark-theme #moonIcon {
+    display: inline;
+}
+
+.buttons_all {
+    margin-top: 15px;
+}
+
+#button_itmes{
+    width: 70px;
+    height: 30px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#button_itmes:hover {
+    background-color:aqua;
+}
+input{
+    width: 80px;
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+

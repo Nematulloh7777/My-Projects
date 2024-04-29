@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6); 
+  border-color: rgba(0, 0, 0, 0);
+}
+
+  /* Добавляем пять разных цветов для рамки */
+  .card:hover:nth-child(1) {
+      border-color: red;
+      color: red;
+  }
+
+  .card:hover:nth-child(2) {
+      border-color: green;
+      color: green;
+  }
+
+  .card:hover:nth-child(3) {
+      border-color: blue;
+      color: blue;
+  }
+
+  .card:hover:nth-child(4) {
+      border-color: brown;
+      color: brown;
+  }
+
+.number {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 40px;
+}
+
+.h1{
+  font-size: 50px;
+}
+
